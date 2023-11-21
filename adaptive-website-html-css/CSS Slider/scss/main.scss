@@ -1,0 +1,31 @@
+@import "adaptive-mixin";
+
+.main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__design-image {
+  display: none;
+  position: absolute;
+  @include media-up(ex-lg) {
+    display: block;
+  }
+  &:nth-child(1) {
+    top: 0;
+    right: 0;
+  }
+  &:nth-child(2) {
+    bottom: -50px;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  &:nth-child(3) {
+    bottom: -50px;
+    right: 0;
+    z-index: -1;
+  }
+}

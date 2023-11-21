@@ -1,0 +1,58 @@
+@import "variables";
+@import "adaptive-mixin";
+
+.app-link {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1028px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 68px;
+  color: $chief-color;
+  @include media-up(lg) {
+    padding-bottom: 123px;
+  }
+}
+
+.app-link__img {
+  width: 100%;
+  max-width: 516px;
+  img {
+    width: 100%;
+  }
+}
+
+.app-link__content-container {
+  max-width: 444px;
+}
+
+.app-link__title {
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 26px;
+  text-align: center;
+}
+
+.app-link__text-content {
+  margin: 0px 0px 60px 0px;
+  font-weight: 400;
+  font-size: $normal-text;
+  line-height: 24px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.app-link__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+
+.app-link__link {
+  margin: 3px;
+}
